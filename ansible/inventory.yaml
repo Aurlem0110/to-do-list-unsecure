@@ -1,0 +1,11 @@
+all:
+  children:
+    my_infra:
+      hosts:
+        app-dev:
+          ansible_host: 192.168.10.145
+        app-prod1:
+          ansible_host: 192.168.10.146
+      vars:
+        ansible_user: admin
+        ansible_python_interpreter: /usr/bin/python3
